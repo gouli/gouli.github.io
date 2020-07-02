@@ -278,6 +278,19 @@ body {
 	padding-bottom: 15px;
 }
 
+ul {
+	list-style: none;
+}
+
+#community .container {
+	display: flex;
+}
+
+#community .container .item{
+	flex-grow: 2;
+}
+
+
 @media (min-width: 1200px){
 	.container { max-width: 1170px; }
 }
@@ -315,7 +328,7 @@ body {
 	.tm-nav-item {
 		float: left;
 		padding: 10px;
-		width: 25%;
+		width: 20%;
 	}
 
 	.tm-main-content {
