@@ -282,14 +282,16 @@ ul {
 	list-style: none;
 }
 
-#community .container {
+#community .flexbox {
 	display: flex;
 }
 
-#community .container .item{
-	flex-grow: 2;
+#community .flexbox .item{
+	padding: 25px;
+  border: 1px solid #8080804a;
+  margin: 10px;
+  width: 33%;
 }
-
 
 @media (min-width: 1200px){
 	.container { max-width: 1170px; }
@@ -300,6 +302,8 @@ ul {
 	.tm-sidebar { width: 300px; }
 	.tm-main-content { margin-left: 300px; }
 	.tm-team-description-container { max-width: 330px; }
+	#community .tm-team-description-container {max-width: 100%;}
+	#community .flexbox {width: 100%;}
 }
 
 /*http://stackoverflow.com/questions/11404744/media-queries-max-width-or-max-height*/
@@ -343,6 +347,8 @@ ul {
 
 @media screen and (max-width: 991px) {
 	.tm-team-description-container { max-width: 440px; }
+	#community .tm-team-description-container { max-width: 100%; }
+
 }
 
 @media screen and (max-width: 767px) {
@@ -355,6 +361,10 @@ ul {
 		max-width: 296px;
 		width: 50%;
 	}
+	#community .flexbox {display: block; width: 100%;}
+	#community .flexbox .item {width: 100%; float: left;}
+	#community .tm-content-box {float: left; }
+
 }
 
 @media screen and (max-width: 991px) and (min-width: 780px) {
