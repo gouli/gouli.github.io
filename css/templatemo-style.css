@@ -280,7 +280,7 @@ body {
 }
 
 ul {
-	list-style: none;
+	list-style: disc;
 }
 
 #community .flexbox {
